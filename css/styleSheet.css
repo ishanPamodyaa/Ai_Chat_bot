@@ -1,0 +1,13 @@
+.cont_01 {
+  height: 300px;
+  /* align-items: center; */
+  background-color: azure;
+  border: 1px solid black;
+}
+.message-bubble {
+    max-width: 75%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  
