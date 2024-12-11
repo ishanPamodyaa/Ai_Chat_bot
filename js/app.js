@@ -71,7 +71,7 @@ fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-
   .catch((error) => console.error(error));
 
 }
-// In script.js
+
 
 function scrollToBottom() {
   console.log("Scrolling to the bottom...");

@@ -89,7 +89,7 @@
 
   .custom-model .modal-content{
     
-    background-color: rgba(172, 172, 172, 0.075);
+    background-color: rgba(54, 53, 53, 0.315);
     color: aliceblue;
   }
   .custom-form-control{
@@ -113,8 +113,7 @@
 
 .modal-dialog {
   display: flex;
-  align-items: center;  /* Vertically center the modal content */
-  justify-content: center; /* Horizontally center the modal content */
-  height: 100vh;           /* Make the modal dialog take full height */
-  /* margin: 0;               Remove default margin */
+  align-items: center;  
+  justify-content: center; 
+  height: 100vh;           
 }
