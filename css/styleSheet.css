@@ -11,3 +11,110 @@
     white-space: normal;
   }
   
+  .userSide{
+
+    border-radius: 20px 0px 20px 20px;
+    background-color:#08c1b9 ;
+    margin-right: 10px;
+    box-shadow:    0px 0px 10px 0px rgba(46, 45, 45, 0.75);
+  }
+
+  .aiSide{
+    border-radius: 0px 20px 20px 20px;
+    background-color:#2d3e50 ;
+    margin-left:10px ;
+    box-shadow:    0px 0px 10px 0px rgba(46, 45, 45, 0.75);
+  }
+
+  .imgUser{
+   align-items: flex-start;
+  }
+
+  .imgAi{
+    align-items: flex-start;
+
+  }
+  .msgDialog{
+    min-height: 250px;
+    max-height: 350px;
+    
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  
+  }
+
+  .mainCont{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right:15px;  
+  background-color: transparent;
+  }
+  body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,20,61,1) 19%, rgba(26,81,138,0.9976798143851509) 68%, rgba(3,30,36,1) 100%);
+  }
+  .container {
+    position: relative;
+    background-color: #c0bfbf00;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 50px;
+    max-height: 100px;
+    height: 80px;
+    width: 100%;
+  }
+  
+  textarea {
+    background-color: transparent;
+    width: calc(100% - 25px);
+    border: none;
+    scrollbar-width: none;
+    height:auto;
+   
+  }
+  
+  textarea:focus {
+    outline: none;
+  }
+  
+  .icon {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   font-size:25px;
+   padding: 5px;
+   color: #c4d3e4;
+  }
+
+  .custom-model .modal-content{
+    
+    background-color: rgba(172, 172, 172, 0.075);
+    color: aliceblue;
+  }
+  .custom-form-control{
+
+    background-color: rgba(19, 21, 44, 0.322) ;
+   color: aliceblue;
+   width: 90%;
+  }
+
+  .custom-form-control:focus {
+    background-color: rgba(19, 21, 44, 0.76) ;
+    color: aliceblue;
+  }
+  
+  .custom-form-control::placeholder {
+  color:rgb(151, 151, 151) ;
+  }
+  h2{
+    text-align:center;
+  }
+
+.modal-dialog {
+  display: flex;
+  align-items: center;  /* Vertically center the modal content */
+  justify-content: center; /* Horizontally center the modal content */
+  height: 100vh;           /* Make the modal dialog take full height */
+  /* margin: 0;               Remove default margin */
+}

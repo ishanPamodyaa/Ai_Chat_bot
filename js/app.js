@@ -10,11 +10,11 @@ function sendMassage() {
     
     document.getElementById("massageDisplyUser").innerHTML += `
     <li class="d-flex justify-content-end mt-2">
-        <div class="bg-primary text-white rounded-4 p-2 me-2 message-bubble">
+        <div class=" text-white userSide p-2 me-2 message-bubble">
             <p class="mb-0 fs-6 text-break" >${massage}</p>
         </div>
-        <div class="d-flex flex-row align-items-center">
-            <img src="img/prof_01.jpg" class="rounded-circle" width="40">
+        <div class="d-flex flex-row imgUser">
+            <img src="img/prof_01.jpg" class="rounded-circle " width="40">
         </div>
     </li>`;
   console.log(massage);
@@ -58,13 +58,24 @@ fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-
 
     document.getElementById("massageDisplyUser").innerHTML += `
     <li class="d-flex justify-content-start mt-2">
-        <div class="d-flex flex-row align-items-center">
-            <img src="img/prof_02.jpg" class="rounded-circle" width="40">
+        <div class="d-flex flex-row imgAi ">
+            <img src="img/prof_02.jpg" class="rounded-circle " width="40">
         </div>    
-        <div class="bg-primary text-white rounded-4 p-2 me-2 message-bubble">
+        <div class=" text-white aiSide p-2 me-2 message-bubble">
             <p class="mb-0 fs-6 text-break" > ${md.render(result.candidates[0].content.parts[0].text)} </p>
         </div>    
     </li> `;
+
+    scrollToBottom();
   })
   .catch((error) => console.error(error));
+
+}
+// In script.js
+
+function scrollToBottom() {
+  console.log("Scrolling to the bottom...");
+  
+  const messageContainer = document.getElementById("massageDisplyUser");
+  messageContainer.scrollTop = messageContainer.scrollHeight;
 }

@@ -10,49 +10,54 @@
     <link rel="stylesheet" href="css/styleSheet.css">
 </head>
 
-<body>
-    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
+<body >
+    <div class="" id="mainCont">
+    <div class="modal custom-model modal-sheet position-static align-items-center  d-block  p-4 py-md-5" tabindex="-1" role="dialog"
         id="modalTour">
         <div class="modal-dialog" role="document">
             <div class="modal-content rounded-4 shadow">
-                <div class="modal-body p-5">
-                    <h2 class="fw-bold mb-0">Solo Chat</h2>
+                <div class="modal-body mainCont">
+                    <h2 class="fw-bold mb-3">TalkToMe </h2>
 
-                    <!-- <select class="form-select w-100 mt-5" id="user" onchange="selectUser()">
-                        <option>-Select User-</option>
-                        <option value="Me">Me</option>
-                        <option value="Friend">Friend</option>
-                    </select> -->
-
-                    <ul class="d-grid gap-4 my-5 list-unstyled small" id="massageDisplyUser">
+                <div class="msgDialog">
+                    <ul class="d-grid gap-4 my-5 list-unstyled small" id="massageDisplyUser" height="500px">
 
                         <li class="d-flex justify-content-end mt-2">
-                            <div class="bg-primary text-white rounded-4 p-2 me-2 message-bubble">
-                                <p class="mb-0 fs-6 text-break">Hi</p>
+                            <div class=" text-white userSide p-2 message-bubble">
+                                <p class="mb-0 fs-6 text-break" >Hi..</p>
                             </div>
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="img/prof_01.jpg" class="rounded-circle" width="40">
+                            <div class="d-flex flex-row imgUser">
+                                <img src="img/prof_01.jpg" class="rounded-circle " width="40">
                             </div>
                         </li>
 
                         <li class="d-flex justify-content-start mt-2">
-                            <div class="d-flex flex-row align-items-center">
-                                <img src="img/prof_02.jpg" class="rounded-circle" width="40">
-                            </div>
-                            <div class="bg-primary text-white rounded-4 p-2 me-2 message-bubble">
-                                <p class="mb-0 fs-6 text-break">Hello</p>
-                            </div>
-                        </li>
+                            <div class="d-flex flex-row imgAi ">
+                                <img src="img/prof_02.jpg" class="rounded-circle " width="40">
+                            </div>    
+                            <div class=" text-white aiSide p-2 message-bubble">
+                                <p class="mb-0 fs-6 text-break" >Hello... </p>
+                            </div>    
+                        </li> 
 
                     </ul>
-
-                    <textarea class="form-control" placeholder="Ask Your Quation" id="massegeTxt"></textarea>
-                    <input type="button" id="sendBtn" value="SEND" class="btn btn-lg btn-primary mt-2 w-100"
-                        onclick="sendMassage()">
+                    </div>
+                    <div class="container">
+                        <textarea class="form-control custom-form-control" placeholder="Ask Your Quation" id="massegeTxt"></textarea>
+                        <i class="icon fas fa-paper-plane" type="button" id="sendBtn" value="SEND"
+                        onclick="sendMassage()"   ></i>
+                      </div>
+                
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://j11y.io/demos/plugins/jQuery/autoresize.jquery.js"></script>
+    <script src="https://kit.fontawesome.com/31f4337ba1.js"></script>
+
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/markdown-it/8.2.2/markdown-it.min.js"></script>
